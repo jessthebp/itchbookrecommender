@@ -252,14 +252,10 @@ function getPriceCategory(priceString) {
 
 /** Build distinct sets from allBooks. */
 function buildTagSets() {
-  const orientationSet = new Set();
   const genreSet = new Set();
   const otherSet = new Set();
 
   allBooks.forEach(book => {
-    if (Array.isArray(book.orientation_tags)) {
-      book.orientation_tags.forEach(t => orientationSet.add(t.toLowerCase()));
-    }
     if (Array.isArray(book.genre_tags)) {
       book.genre_tags.forEach(t => genreSet.add(t.toLowerCase()));
     }
@@ -267,7 +263,6 @@ function buildTagSets() {
       book.other_tags.forEach(t => otherSet.add(t.toLowerCase()));
     }
   });
-  orientationMaster = Array.from(orientationSet).sort();
   genreMaster = Array.from(genreSet).sort();
   otherMaster = Array.from(otherSet).sort();
 }
@@ -275,13 +270,6 @@ function buildTagSets() {
 /** Rebuild all 3 sections with the current search query. */
 function rebuildAllSections() {
   const query = document.getElementById("tagSearch").value.trim().toLowerCase();
-
-  showCheckboxesInSection(
-    "orientationSection",
-    orientationMaster,
-    getCheckedOrientation(),
-    query
-  );
   showCheckboxesInSection(
     "genreSection",
     genreMaster,
@@ -333,10 +321,6 @@ function showCheckboxesInSection(sectionId, listOfTags, oldChecked, query) {
   });
 }
 
-function getCheckedOrientation() {
-  const checks = document.querySelectorAll("#orientationSection input[type=checkbox]:checked");
-  return Array.from(checks).map(ch => ch.value);
-}
 function getCheckedGenre() {
   const checks = document.querySelectorAll("#genreSection input[type=checkbox]:checked");
   return Array.from(checks).map(ch => ch.value);
@@ -347,7 +331,6 @@ function getCheckedOther() {
 }
 
 function filterData() {
-  const orientationSelected = getCheckedOrientation().map(s => s.toLowerCase());
   const genreSelected = getCheckedGenre().map(s => s.toLowerCase());
   const otherSelected = getCheckedOther().map(s => s.toLowerCase());
 
@@ -359,12 +342,6 @@ function filterData() {
     .filter(t => t);
 
   return allBooks.filter(book => {
-    // orientation check
-    if (orientationSelected.length > 0) {
-      const bookSet = new Set((book.orientation_tags || []).map(x => x.toLowerCase()));
-      const hasAll = orientationSelected.every(t => bookSet.has(t));
-      if (!hasAll) return false;
-    }
     // genre check
     if (genreSelected.length > 0) {
       const bookSet = new Set((book.genre_tags || []).map(x => x.toLowerCase()));
@@ -444,7 +421,6 @@ function renderOneBook(book) {
   const price = book.price || "";
   const triggers = (book.triggers || []).join("; ");
 
-  const orientationStr = (book.orientation_tags || []).join(", ");
   const genreStr = (book.genre_tags || []).join(", ");
   const otherStr = (book.other_tags || []).join(", ");
 
