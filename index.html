@@ -53,6 +53,20 @@
       display: none !important;
     }
 
+    label[for], .filters label {
+      font-weight: 600;
+    }
+    input[type="text"] {
+      padding: 0.3rem 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-left: 0.4rem;
+    }
+    input[type="text"]:focus {
+      outline: none;
+      border-color: var(--dusty-orange);
+    }
+
     .button-row {
       margin-top: 1.2rem;
       display: flex;
@@ -170,7 +184,17 @@
 
 <div class="filters">
   <h2>Filters</h2>
+  <div>
+    <label>Search tags:
+      <input type="text" id="tagSearch" placeholder="Filter checkboxes" />
+    </label>
+  </div>
   <button id="toggleTagsBtn">Hide/Show Tag Filters</button>
+
+  <div class="tag-category">
+    <h3>Orientation Tags</h3>
+    <div id="orientationSection" class="tag-section"></div>
+  </div>
 
   <div class="tag-category">
     <h3>Genre Tags</h3>
@@ -214,7 +238,12 @@
 <script>
 let allBooks = [];
 
-/** Price check helper */
+// We'll keep separate 'master lists' for orientation, genre, other.
+let orientationMaster = [];
+let genreMaster = [];
+let otherMaster = [];
+
+/** Convert a price string to 'free' or 'paid'. */
 function getPriceCategory(priceString) {
   if (!priceString || priceString.trim().length === 0) {
     return "free";
@@ -226,11 +255,7 @@ function getPriceCategory(priceString) {
   return "paid";
 }
 
-/** Build distinct sets of orientation, genre, other tags from data. */
-let orientationMaster = [];
-let genreMaster = [];
-let otherMaster = [];
-
+/** Build distinct sets from allBooks. */
 function buildTagSets() {
   const orientationSet = new Set();
   const genreSet = new Set();
@@ -238,102 +263,131 @@ function buildTagSets() {
 
   allBooks.forEach(book => {
     if (Array.isArray(book.orientation_tags)) {
-      book.orientation_tags.forEach(t => orientationSet.add(t));
+      book.orientation_tags.forEach(t => orientationSet.add(t.toLowerCase()));
     }
     if (Array.isArray(book.genre_tags)) {
-      book.genre_tags.forEach(t => genreSet.add(t));
+      book.genre_tags.forEach(t => genreSet.add(t.toLowerCase()));
     }
     if (Array.isArray(book.other_tags)) {
-      book.other_tags.forEach(t => otherSet.add(t));
+      book.other_tags.forEach(t => otherSet.add(t.toLowerCase()));
     }
   });
-
   orientationMaster = Array.from(orientationSet).sort();
   genreMaster = Array.from(genreSet).sort();
   otherMaster = Array.from(otherSet).sort();
 }
 
-/** Fill out checkboxes for each category. */
-function buildCheckboxes() {
-  buildTagSets();
+/** Rebuild all 3 sections with the current search query. */
+function rebuildAllSections() {
+  const query = document.getElementById("tagSearch").value.trim().toLowerCase();
 
-  renderCheckboxSection("orientationSection", orientationMaster);
-  renderCheckboxSection("genreSection", genreMaster);
-  renderCheckboxSection("otherSection", otherMaster);
+  showCheckboxesInSection(
+    "orientationSection",
+    orientationMaster,
+    getCheckedOrientation(),
+    query
+  );
+  showCheckboxesInSection(
+    "genreSection",
+    genreMaster,
+    getCheckedGenre(),
+    query
+  );
+  showCheckboxesInSection(
+    "otherSection",
+    otherMaster,
+    getCheckedOther(),
+    query
+  );
 }
 
-/** Helper to create checkboxes for a given DOM section and list of tags. */
-function renderCheckboxSection(sectionId, listOfTags) {
+/** showCheckboxesInSection:
+    - oldChecked: the array of tags that were previously selected
+    - listOfTags: the master array of tags for that category
+    - query: filter
+*/
+function showCheckboxesInSection(sectionId, listOfTags, oldChecked, query) {
   const container = document.getElementById(sectionId);
-  container.innerHTML = ""; // clear
+  container.innerHTML = "";
 
-  listOfTags.forEach(tag => {
+  // Filter by query OR keep them if they're already checked
+  // We'll do a small trick: if the tag includes the query or it's in oldChecked, we display it
+  const displayTags = listOfTags.filter(tag => {
+    if (oldChecked.includes(tag)) return true; // always show selected
+    return tag.includes(query);
+  });
+
+  // Then sort so checked appear first, then alphabetical
+  displayTags.sort((a, b) => {
+    const aChecked = oldChecked.includes(a);
+    const bChecked = oldChecked.includes(b);
+    if (aChecked === bChecked) {
+      return a.localeCompare(b);
+    }
+    return aChecked ? -1 : 1;
+  });
+
+  displayTags.forEach(tag => {
     const label = document.createElement("label");
     label.innerHTML = `<input type="checkbox" value="${tag}" /> ${tag}`;
+    const inputEl = label.querySelector("input");
+    if (oldChecked.includes(tag)) {
+      inputEl.checked = true;
+    }
     container.appendChild(label);
   });
 }
 
-/** Gather selected tags from each category. */
-function getSelectedOrientationTags() {
-  const container = document.getElementById("orientationSection");
-  const checks = container.querySelectorAll("input[type=checkbox]:checked");
-  const vals = [];
-  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
-  return vals;
+function getCheckedOrientation() {
+  const checks = document.querySelectorAll("#orientationSection input[type=checkbox]:checked");
+  return Array.from(checks).map(ch => ch.value);
 }
-function getSelectedGenreTags() {
-  const container = document.getElementById("genreSection");
-  const checks = container.querySelectorAll("input[type=checkbox]:checked");
-  const vals = [];
-  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
-  return vals;
+function getCheckedGenre() {
+  const checks = document.querySelectorAll("#genreSection input[type=checkbox]:checked");
+  return Array.from(checks).map(ch => ch.value);
 }
-function getSelectedOtherTags() {
-  const container = document.getElementById("otherSection");
-  const checks = container.querySelectorAll("input[type=checkbox]:checked");
-  const vals = [];
-  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
-  return vals;
+function getCheckedOther() {
+  const checks = document.querySelectorAll("#otherSection input[type=checkbox]:checked");
+  return Array.from(checks).map(ch => ch.value);
 }
 
 function filterData() {
-  // gather user selections
-  const orientationSelected = getSelectedOrientationTags();
-  const genreSelected = getSelectedGenreTags();
-  const otherSelected = getSelectedOtherTags();
+  const orientationSelected = getCheckedOrientation().map(s => s.toLowerCase());
+  const genreSelected = getCheckedGenre().map(s => s.toLowerCase());
+  const otherSelected = getCheckedOther().map(s => s.toLowerCase());
+
   const priceFilter = document.getElementById("priceFilter").value;
   const excludeInput = document.getElementById("excludeTriggers").value;
-  const excludedTriggers = excludeInput.split(",").map(t => t.trim().toLowerCase()).filter(t => t);
+  const excludedTriggers = excludeInput
+    .split(",")
+    .map(t => t.trim().toLowerCase())
+    .filter(t => t);
 
-  // do final filter
   return allBooks.filter(book => {
-    // orientation
+    // orientation check
     if (orientationSelected.length > 0) {
-      const bookOrientationSet = new Set((book.orientation_tags || []).map(x => x.toLowerCase()));
-      const hasAllOrientation = orientationSelected.every(tag => bookOrientationSet.has(tag));
-      if (!hasAllOrientation) return false;
+      const bookSet = new Set((book.orientation_tags || []).map(x => x.toLowerCase()));
+      const hasAll = orientationSelected.every(t => bookSet.has(t));
+      if (!hasAll) return false;
     }
-    // genre
+    // genre check
     if (genreSelected.length > 0) {
-      const bookGenreSet = new Set((book.genre_tags || []).map(x => x.toLowerCase()));
-      const hasAllGenre = genreSelected.every(tag => bookGenreSet.has(tag));
-      if (!hasAllGenre) return false;
+      const bookSet = new Set((book.genre_tags || []).map(x => x.toLowerCase()));
+      const hasAll = genreSelected.every(t => bookSet.has(t));
+      if (!hasAll) return false;
     }
-    // other
+    // other check
     if (otherSelected.length > 0) {
-      const bookOtherSet = new Set((book.other_tags || []).map(x => x.toLowerCase()));
-      const hasAllOther = otherSelected.every(tag => bookOtherSet.has(tag));
-      if (!hasAllOther) return false;
+      const bookSet = new Set((book.other_tags || []).map(x => x.toLowerCase()));
+      const hasAll = otherSelected.every(t => bookSet.has(t));
+      if (!hasAll) return false;
     }
-
-    // Price
+    // price check
     if (priceFilter !== "all") {
       const cat = getPriceCategory(book.price);
       if (cat !== priceFilter) return false;
     }
-
-    // Exclude triggers
+    // triggers
     if (excludedTriggers.length > 0 && Array.isArray(book.triggers)) {
       const trigStr = book.triggers.join(" ").toLowerCase();
       const hasExcluded = excludedTriggers.some(ex => trigStr.includes(ex));
@@ -434,6 +488,10 @@ function clearFilters() {
   document.getElementById("priceFilter").value = "all";
   document.getElementById("excludeTriggers").value = "";
   document.getElementById("results").innerHTML = "";
+
+  // also clear the search
+  document.getElementById("tagSearch").value = "";
+  rebuildAllSections();
 }
 
 function toggleTags() {
@@ -450,7 +508,8 @@ fetch("parsed_data.json")
   .then(r => r.json())
   .then(data => {
     allBooks = data;
-    buildCheckboxes();
+    buildTagSets(); // gather distinct sets
+    rebuildAllSections(); // create checkboxes
   })
   .catch(err => {
     console.error("Error loading JSON:", err);
@@ -460,6 +519,11 @@ fetch("parsed_data.json")
 document.getElementById("pickBookBtn").addEventListener("click", pickBook);
 document.getElementById("clearFiltersBtn").addEventListener("click", clearFilters);
 document.getElementById("toggleTagsBtn").addEventListener("click", toggleTags);
+
+// On input in #tagSearch => rebuildAllSections
+document.getElementById("tagSearch").addEventListener("input", e => {
+  rebuildAllSections();
+});
 </script>
 </body>
 </html>
