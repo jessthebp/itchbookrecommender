@@ -19,13 +19,17 @@
       "sex",
       "violence"
     ],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "fantasy",
+      "book",
       "fantasy-romance",
-      "lesbian",
       "lgbt",
-      "romance",
+      "sapphic",
       "sicko-lesbians"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4MzQ3MzE0LnBuZw==/347x500/OnES6h.png",
@@ -49,13 +53,17 @@
       "trypophobia",
       "uncomfortable"
     ],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
       "adult",
-      "lesbian",
+      "book",
       "lgbt",
       "nature",
-      "romantic-fantasy"
+      "romantic-fantasy",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4NDQ0NTI1LnBuZw==/347x500/btr0hh.png",
     "origin_url": "https://danifinn.itch.io/the-living-waters",
@@ -68,13 +76,17 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "book",
       "horror-romance",
       "horror-short-story",
-      "lesbian",
       "lgbt",
       "romance-short-story",
+      "sapphic",
       "short-story",
       "sicko-lesbians"
     ],
@@ -89,14 +101,17 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "cyberpunk",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "mecha",
-      "sci-fi",
+      "sapphic",
       "sicko-lesbians",
       "trans"
     ],
@@ -111,12 +126,15 @@
     "price": "$7.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "cyberpunk",
-      "lgbt",
-      "literature",
-      "sci-fi"
+      "lgbtqia",
+      "literature"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE2MDYxMDU2LmpwZw==/347x500/mrAQcq.jpg",
     "origin_url": "https://null-convention.itch.io/eating-at-chain-resta",
@@ -129,8 +147,10 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "book",
       "comedy",
       "filmcow",
       "goo",
@@ -153,14 +173,19 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "audiobook",
+      "book",
       "crime",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "no ai",
-      "romance",
+      "sapphic",
       "sicko-lesbians",
       "toxic-yuri",
       "trans"
@@ -176,12 +201,15 @@
     "price": "$9.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "dark",
-      "gay",
       "halloween",
-      "horror",
       "lgbt",
       "male protagonist",
       "psychological horror",
@@ -199,10 +227,16 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance"
+    ],
     "other_tags": [
+      "achillean",
+      "book",
       "demon",
-      "gay",
       "lgbt",
+      "lgbtqia",
       "vampire"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4MzE1MTA0LmpwZw==/347x500/hXGiwm.jpg",
@@ -216,16 +250,20 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "book",
       "coming of age",
       "dark",
       "experimental",
-      "fantasy",
-      "horror",
       "lgbt",
+      "lgbtqia",
       "serial-killer",
-      "slice of life",
       "trans",
       "weird"
     ],
@@ -240,16 +278,20 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "countryside",
-      "gay",
       "illustrated",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "light-novel",
-      "queer",
-      "romance",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjYyMTQxLzEyNTk5OTEucG5n/347x500/E08XQo.png",
@@ -263,20 +305,23 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "dragons",
-      "fantasy",
-      "gay",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "no ai",
-      "queer",
-      "romance",
       "romantasy",
-      "trans",
-      "transfem"
+      "sapphic",
+      "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE5MTA0MDE1LmpwZw==/347x500/WJT37a.jpg",
     "origin_url": "https://vyriadurav.itch.io/the-dragon-and-her-princess",
@@ -289,14 +334,17 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
-      "gay",
+      "achillean",
+      "book",
       "instar-books",
       "jeanne-thornton",
       "lambda",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
+      "sapphic",
       "short-fiction",
       "the-black-emerald",
       "torrey-peters",
@@ -313,8 +361,11 @@
     "price": "$3.50 USD",
     "triggers": [],
     "trigger_tags": [],
-    "other_tags": [
+    "genre_tags": [
       "sci-fi"
+    ],
+    "other_tags": [
+      "book"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzYxODUyOTUucG5n/347x500/pps5N%2F.png",
     "origin_url": "https://legendgerry.itch.io/freeport-nights-the-racer",
@@ -327,15 +378,17 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
-      "gay",
-      "lesbian",
+      "achillean",
+      "book",
       "lgbt",
       "lgbtqia",
       "novella",
       "post-apocalyptic",
-      "prairie-song"
+      "prairie-song",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzI0ODM0MTQucG5n/347x500/u36O36.png",
     "origin_url": "https://cardzeropress.itch.io/windfield-pass",
@@ -347,6 +400,7 @@
     "description": "\"Does the moon watch over us while we sleep? Does it stare into our souls with its omnipresent wan eyes, watching over us in our time of grief and despair?\" In This House of The Two of Us is a psychological/queer romance short novella (18k words.) It tells the story of Adam Holst, a man grieving the approach of the anniversary of his late husband Tadashi's death. On a particularly stormy night, he's visited by a ghost with a terrifyingly familiar face... Throughout Adam's attempt to exorcise said ghost, alongside getting closer with Samael Su, a young, awkward aspiring exorcist, Adam is forced to recall aspects of the past he would much rather forget. Content warning: heavy themes of death and loss If you enjoyed reading, consider donating to my Kofi to continue to support my future projects! And follow me on Twitter for more!",
     "price": null,
     "triggers": [
+      "heavy themes of death and loss",
       "heavy themes of death and loss"
     ],
     "trigger_tags": [
@@ -355,13 +409,18 @@
       "loss",
       "themes"
     ],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "dark",
-      "fantasy",
-      "gay",
       "ghosts",
       "lgbt",
+      "lgbtqia",
       "short",
       "text based"
     ],
@@ -376,16 +435,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "achillean",
       "atmospheric",
+      "book",
       "creepy",
       "dark",
       "experimental",
-      "gay",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "psychological horror",
+      "sapphic",
       "trans",
       "weird"
     ],
@@ -426,15 +488,18 @@
       "times",
       "watched"
     ],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
+      "book",
       "indie",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "psychological horror",
-      "queer",
       "religious-horror",
+      "sapphic",
       "short",
       "trans",
       "werewolf"
@@ -450,16 +515,19 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror"
+    ],
     "other_tags": [
       "",
+      "book",
       "fairy tale",
-      "fantasy",
       "female protagonist",
-      "horror",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "magical realism",
-      "queer",
+      "sapphic",
       "weird"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzMxMjY2NzMuanBn/347x500/LiFifT.jpg",
@@ -473,10 +541,13 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
-      "cosmic-fiction",
-      "sci-fi"
+      "book",
+      "cosmic-fiction"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjYyNjQ4MC8xNTY0ODk4OC5wbmc=/347x500/p2Zv4Y.png",
     "origin_url": "https://abronzeagegod.itch.io/eldritch-tech-support-the-algorithm-of-chaos",
@@ -489,16 +560,18 @@
     "price": "$4.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "bisexual",
-      "gay",
-      "horror",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
       "monsters",
-      "queer",
+      "sapphic",
       "vampire",
       "werewolf"
     ],
@@ -513,16 +586,20 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "adventure",
+      "book",
       "chronomancer",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "novel",
       "pirates",
       "pulp",
-      "queer",
-      "sci-fi",
+      "sapphic",
       "space",
       "trans"
     ],
@@ -576,16 +653,19 @@
       "war",
       "while"
     ],
+    "genre_tags": [
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
       "female protagonist",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "romance"
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjA3MzYxMC8xNjgzODgwNC5qcGc=/347x500/Rq3HCv.jpg",
     "origin_url": "https://wickedwitchwrites.itch.io/an-orc-and-a-gentleman",
@@ -598,12 +678,17 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "historical",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "gay",
+      "achillean",
+      "book",
       "lgbt",
-      "novella",
-      "sci-fi"
+      "novella"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE1Njk0NDE2LnBuZw==/347x500/05RHIm.png",
     "origin_url": "https://wiltking.itch.io/hymn",
@@ -616,17 +701,20 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "anthro",
+      "book",
       "found-footage",
       "furry",
       "giants",
-      "horror",
-      "lesbian",
       "lgbt",
       "macro",
-      "sci-fi",
+      "sapphic",
       "thriller",
       "trans"
     ],
@@ -641,13 +729,18 @@
     "price": "$15.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
-      "gay",
+      "achillean",
+      "book",
       "jdr",
       "jeu-de-role",
       "lgbt",
-      "renaissance-fantasy"
+      "renaissance-fantasy",
+      "role playing"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjE4MDk3OC8xMjg3ODAzOS5qcGc=/347x500/l7FYu3.jpg",
     "origin_url": "https://argyropee.itch.io/argyropee-regles-et-bestiaire",
@@ -660,18 +753,21 @@
     "price": "$9.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
+      "book",
       "dark-souls",
-      "fantasy",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "magic",
       "magic-system",
       "medieval",
-      "queer",
+      "sapphic",
       "wizards"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTc1MDc4NC8xMDU0NjYyNi5qcGc=/347x500/X5pCzi.jpg",
@@ -685,14 +781,19 @@
     "price": "$7.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "adventure",
       "audiobook",
+      "book",
       "dinosaurs",
-      "gay",
-      "lesbian",
       "lgbt",
-      "sci-fi",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvNTU2NDk4LzI5MTY2MzkuanBn/347x500/AXFlVT.jpg",
@@ -706,12 +807,17 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
-      "gay",
+      "achillean",
+      "book",
       "lgbt",
       "monsters",
-      "sci-fi",
       "short"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjgyNjQ1MC8xNjg4NjIxMy5wbmc=/347x500/W0Els%2B.png",
@@ -725,9 +831,12 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
+      "book",
       "horror-story",
       "lgbtqia",
       "psychological horror",
@@ -746,12 +855,15 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
-      "lesbian",
+      "book",
       "lgbt",
-      "nes (nintendo entertainment system)"
+      "nes (nintendo entertainment system)",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzIwMTQ1MTguanBn/347x500/G%2FndEj.jpg",
     "origin_url": "https://joelcouture.itch.io/you-and-your-friends-are-dead",
@@ -764,12 +876,15 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "historical",
+      "romance"
+    ],
     "other_tags": [
       "",
-      "historical-fiction",
-      "lesbian",
+      "book",
       "lgbt",
-      "romance",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEzNjQ2NDU0LmpwZw==/347x500/rYxtDk.jpg",
@@ -783,6 +898,7 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [],
     "cover_image": null,
     "origin_url": "https://www.facebook.com/itchiogames",
@@ -795,11 +911,15 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "boys' love",
-      "gay",
       "lgbt",
       "lgbtqia",
       "male protagonist",
@@ -816,15 +936,18 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "boys' love",
-      "gay",
-      "horror",
       "lgbt",
       "lgbtqia",
       "male protagonist",
-      "romance",
       "story rich",
       "zombie"
     ],
@@ -839,12 +962,14 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "book",
       "dark humor",
-      "horror",
       "lgbtqia",
-      "queer",
       "survival horror",
       "thriller"
     ],
@@ -859,16 +984,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "book",
       "botany",
+      "educational",
       "floral",
       "flowers",
       "gardening",
-      "lesbian",
       "lgbt",
       "pattern",
       "plants",
+      "sapphic",
       "science",
       "zine"
     ],
@@ -883,8 +1011,10 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "book",
       "locked-room",
       "mind-bending",
       "murder-mystery",
@@ -901,8 +1031,10 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "book",
       "impossible-crime",
       "murder",
       "mystery",
@@ -920,16 +1052,16 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "achillean",
       "ai",
       "assault",
+      "book",
       "coming of age",
-      "gay",
-      "genderqueer",
       "lgbt",
-      "lgbtq",
-      "queer",
+      "lgbtqia",
       "short-story",
       "text based",
       "trans"
@@ -945,15 +1077,18 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
       "narrative",
       "novel",
-      "queer",
-      "sci-fi",
+      "sapphic",
       "vampire",
       "young-adult"
     ],
@@ -968,11 +1103,14 @@
     "price": "$4.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
-      "fantasy",
-      "lesbian",
+      "book",
       "lgbt",
+      "sapphic",
       "swords",
       "young-adult"
     ],
@@ -987,16 +1125,18 @@
     "price": "$2.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
       "aromantic",
       "asexual",
+      "book",
       "cozy-fantasy",
-      "fantasy",
       "found-family",
       "lgbtqia",
       "novella",
-      "queer",
       "queerplatonic",
       "short"
     ],
@@ -1011,18 +1151,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "canadian",
       "contemporary-fiction",
       "ebook",
       "fiction",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "novel",
-      "queer",
+      "sapphic",
       "trans",
       "young-adult"
     ],
@@ -1037,17 +1178,20 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance"
+    ],
     "other_tags": [
       "",
       "anthro",
+      "book",
       "erotic",
       "furry",
-      "horror",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "period piece",
-      "queer",
-      "romance",
+      "sapphic",
       "story rich"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzQ2Nzg5MTQucG5n/347x500/HxolhP.png",
@@ -1061,14 +1205,16 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "book",
       "chapbook",
       "dark",
-      "horror",
-      "lgbt",
+      "lgbtqia",
       "poetry",
-      "queer",
       "surreal"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE1MDE0OTgzLnBuZw==/347x500/s7ts8c.png",
@@ -1082,11 +1228,14 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "body-horror",
-      "gay",
-      "horror",
+      "book",
       "horror-story",
       "lgbt",
       "lgbtqia",
@@ -1105,6 +1254,7 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [],
     "cover_image": null,
     "origin_url": "https://beedok.itch.io/dirty-little-secret",
@@ -1117,8 +1267,10 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "book",
       "folklore",
       "gaza",
       "palestine",
@@ -1135,10 +1287,14 @@
     "price": "$4.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "book",
       "crime",
-      "sci-fi",
       "space",
       "western"
     ],
@@ -1153,17 +1309,20 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
-      "horror",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "mechs",
       "psychological horror",
-      "queer",
-      "sci-fi",
+      "sapphic",
       "short",
       "trans"
     ],
@@ -1178,6 +1337,7 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [],
     "cover_image": null,
     "origin_url": "https://twitter.com/itchio",
@@ -1190,15 +1350,19 @@
     "price": "$6.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "book",
       "comedy",
       "ghosts",
       "halloween",
-      "horror",
       "monsters",
       "mystery",
-      "sci-fi",
       "supernatural"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzUxNjIwNjUucG5n/347x500/X67LKm.png",
@@ -1212,12 +1376,17 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
-    "other_tags": [
-      "",
+    "genre_tags": [
       "fantasy",
       "historical",
       "horror",
+      "sci-fi"
+    ],
+    "other_tags": [
+      "",
+      "book",
       "lgbt",
+      "lgbtqia",
       "trans",
       "werewolf",
       "wolf",
@@ -1235,8 +1404,10 @@
     "price": "$1.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
-      "gay",
+      "achillean",
+      "book",
       "lgbt",
       "trans"
     ],
@@ -1251,16 +1422,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
+      "achillean",
+      "book",
       "detective",
       "erotic",
       "experimental",
-      "gay",
-      "lesbian",
       "lgbt",
       "mystery",
+      "sapphic",
       "surreal",
       "weird",
       "zine"
@@ -1276,10 +1450,13 @@
     "price": "$7.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
       "atmospheric",
-      "fantasy",
+      "book",
       "female protagonist",
       "funny",
       "philosophical",
@@ -1300,10 +1477,13 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
-      "queer"
+      "book",
+      "lgbtqia"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEyNDQxODM1LnBuZw==/347x500/9L0piq.png",
     "origin_url": "https://traumbooks.itch.io/corrupted-vessels",
@@ -1316,16 +1496,22 @@
     "price": "$15.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "historical",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "anthology",
+      "book",
       "demon",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "paranormal",
-      "romance",
+      "sapphic",
       "trans",
       "vampire"
     ],
@@ -1340,15 +1526,20 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "creepy",
-      "gay",
-      "horror",
       "internet",
-      "lesbian",
       "lgbt",
       "lgbtqia",
+      "sapphic",
       "trans",
       "vampire",
       "weird",
@@ -1365,13 +1556,14 @@
     "price": "$15.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
       "art book",
       "book",
-      "lesbian",
       "lgbt",
-      "lucycamui"
+      "lucycamui",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvNDMzMzg4LzIxNzM4OTMucG5n/347x500/Z2lp%2BF.png",
     "origin_url": "https://lucycamui.itch.io/a-sirens-call-volume-one",
@@ -1384,13 +1576,17 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "furry",
-      "gay",
-      "lesbian",
       "lgbt",
+      "sapphic",
       "werewolf"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzIxMTgyMDAucG5n/347x500/mQLcT%2B.png",
@@ -1404,19 +1600,24 @@
     "price": "$15.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "body-horror",
+      "book",
       "demon",
       "dystopian",
       "fairy tale",
-      "fantasy",
-      "gay",
       "lgbt",
+      "lgbtqia",
       "literature",
       "poetry",
       "post-apocalyptic",
-      "sci-fi",
       "short-story",
       "surreal",
       "trans",
@@ -1433,15 +1634,20 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
+      "book",
       "dragons",
       "knights",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "romance",
+      "sapphic",
       "witch"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTg1ODU5OC8xMDkxNjc0Mi5qcGc=/347x500/d%2Btzrm.jpg",
@@ -1455,16 +1661,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "historical"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "art book",
       "book",
       "fanzine",
-      "gay",
-      "lesbian",
       "lgbt",
       "medieval",
       "pentiment",
+      "sapphic",
       "zine"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjYxNjkyNC8xNTU5MTYzNi5wbmc=/347x500/2LBNBX.png",
@@ -1478,7 +1687,11 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "slice_of_life"
+    ],
     "other_tags": [
+      "book",
       "lgbt",
       "trans"
     ],
@@ -1493,9 +1706,11 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
-      "lesbian",
+      "book",
       "lgbt",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTEyMzE2LzUyMTI4OC5wbmc=/347x500/DJY3NH.png",
@@ -1509,8 +1724,12 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "book",
       "cyberpunk",
       "detective",
       "noir",
@@ -1527,16 +1746,19 @@
     "price": "$4.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "audiobook",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
       "mechs",
       "nsfw",
-      "romance",
-      "sci-fi",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE1MTc1MzU5LnBuZw==/347x500/QLnK7R.png",
@@ -1550,14 +1772,17 @@
     "price": "$2.95 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
-      "fantasy",
-      "gay",
-      "lesbian",
+      "achillean",
+      "book",
       "lgbt",
       "novel",
-      "romance"
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTMyNDc4Ny83NzAzOTU5LnBuZw==/347x500/FR0THJ.png",
     "origin_url": "https://screwylightbulb.itch.io/warden",
@@ -1570,16 +1795,19 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
       "anticapitalist",
+      "book",
       "cyberpunk",
       "f-nb",
-      "gay",
       "lgbt",
-      "nonbinary",
-      "sci-fi",
+      "lgbtqia",
       "short",
       "trans"
     ],
@@ -1594,15 +1822,18 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "battletech",
-      "gay",
-      "lesbian",
+      "book",
       "lgbt",
-      "lgbtq",
+      "lgbtqia",
       "pride",
-      "queer",
+      "sapphic",
       "shortstory",
       "trans"
     ],
@@ -1617,14 +1848,16 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "gender",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "sci-fi",
+      "sapphic",
       "short",
       "trans"
     ],
@@ -1639,13 +1872,16 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
-      "romance",
-      "sci-fi",
+      "sapphic",
       "short"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE0MTg1MTI0LmpwZWc=/347x500/UIYI%2BY.jpeg",
@@ -1659,12 +1895,15 @@
     "price": "$2.50 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
+      "sapphic",
       "toxic-yuri",
       "trans"
     ],
@@ -1679,16 +1918,20 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "audiobook",
+      "book",
       "female protagonist",
-      "horror",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "no ai",
       "psychological horror",
-      "sci-fi",
+      "sapphic",
       "sicko-lesbians",
       "surreal",
       "trans"
@@ -1703,6 +1946,10 @@
     "description": "A glittering city of eternal twilight, a troubled cybernetic lounge singer, a grieving PI on the case... In the distant future of planet cracking, VR distraction, and corporate greed, private detective Ryoma LeBeau takes what seems to be a simple job on the opulent casino planetoid of Scylla. Captivated by a chance meeting with the cybernetic musician Guin, he finds himself drawn to the smoky anachronistic lounge bar where they perform. But it seems there's a lot more to both Guin and this case and Ryoma can't help but pull at the threads of mystery leading him to the depths of conspiracy and memory. Synthetic Sea is a cyberpunk noir entwined with T4T queer romance, great for fans of Neuromancer, Ghost in the Shell, and Philip D Dick novels. Content Warning: This novel covers themes of close family loss, dehumanisation, and the trauma of sexual assault, so do take care if these things are particularly upsetting to you.",
     "price": "$2.99 USD",
     "triggers": [
+      "This novel covers themes of close family loss",
+      "dehumanisation",
+      "and the trauma of sexual assault",
+      "so do take care if these things are particularly upsetting to you.",
       "This novel covers themes of close family loss",
       "dehumanisation",
       "and the trauma of sexual assault",
@@ -1726,8 +1973,13 @@
       "trauma",
       "upsetting"
     ],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "cyberpunk",
       "cyborgs",
       "detective",
@@ -1735,9 +1987,6 @@
       "lgbtqia",
       "mystery",
       "noir",
-      "queer",
-      "romance",
-      "sci-fi",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjUwNjUzNi8xNjM1MDI5MC5wbmc=/347x500/f26LKm.png",
@@ -1751,18 +2000,21 @@
     "price": "$6.50 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "boys' love",
       "erotic",
-      "fantasy",
-      "gay",
       "knights",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "romance",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4MzY3NjYyLnBuZw==/347x500/4Y0dg6.png",
@@ -1776,9 +2028,13 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "horror"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
+      "book",
       "demon",
       "demonology",
       "ero-guro",
@@ -1796,14 +2052,47 @@
     "author": "elle porter",
     "description": "HEIR TO THE AUTUMN COURT features five high heat tales, centered around Princeling Fenyr as they gather both allies and lovers in preparation of their upcoming coronation. Stories within this collection: The Princeling and the Bull The Princeling and the Guardian The Princeling and the Revel The Princeling and the Suitor The Princeling and the Circle Content Notes: m/m fantasy erotica, nonbinary MC, transmasc MCs, fae, monsterfucking, polyamory/polycule, D/s elements, alcohol, rope bondage, facefucking, strap on sex Cover illustration by Yune Typography by Wolfsparrow Covers",
     "price": "$2.00 USD",
-    "triggers": [],
-    "trigger_tags": [],
+    "triggers": [
+      "m/m fantasy erotica",
+      "nonbinary MC",
+      "transmasc MCs",
+      "fae",
+      "monsterfucking",
+      "polyamory/polycule",
+      "D/s elements",
+      "alcohol",
+      "rope bondage",
+      "facefucking",
+      "strap on sex"
+    ],
+    "trigger_tags": [
+      "alcohol",
+      "bondage",
+      "elements",
+      "erotica",
+      "facefucking",
+      "fae",
+      "fantasy",
+      "mcs",
+      "monsterfucking",
+      "nonbinary",
+      "polyamory",
+      "polycule",
+      "rope",
+      "sex",
+      "strap",
+      "transmasc"
+    ],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "erotica",
-      "gay",
       "lgbt",
-      "queer",
+      "lgbtqia",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjM5MTIxNC8xODMzMjU4MC5qcGc=/347x500/x3R1A%2F.jpg",
@@ -1817,16 +2106,18 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
       "halloween",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "monster girls",
       "monsters",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMzA2NjUxNS8xODM0MDEyOC5wbmc=/347x500/mQNLLW.png",
@@ -1840,10 +2131,15 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "cozy",
-      "gay",
       "lgbt",
       "lgbtqia",
       "magical realism",
@@ -1864,15 +2160,21 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "romance",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
-      "gay",
+      "achillean",
+      "book",
       "knights",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "romance",
+      "sapphic",
       "trans",
       "witch"
     ],
@@ -1887,13 +2189,16 @@
     "price": "$2.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
-      "fantasy",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
-      "nonbinary",
+      "sapphic",
+      "trans",
       "western"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4MzQ3NjA3LnBuZw==/347x500/Y%2Fs1cp.png",
@@ -1907,7 +2212,10 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
+      "adventure",
+      "book",
       "lgbt",
       "sailing",
       "trans"
@@ -1923,10 +2231,13 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "horror"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
-      "horror",
+      "book",
       "short-fiction"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzExNDczOTQ2LmpwZw==/347x500/V7J4%2B2.jpg",
@@ -1940,15 +2251,20 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "historical",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "adventure",
+      "book",
       "elizabethan",
-      "fantasy",
       "genderfluid",
-      "lesbian",
       "lgbt",
       "magical realism",
-      "romantic",
+      "sapphic",
       "shakespeare",
       "trans"
     ],
@@ -1963,17 +2279,19 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "boys' love",
       "erotic",
-      "fantasy",
-      "gay",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "romance",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjQ0MjI2Mi8xNDQ2NjU3MC5qcGc=/347x500/sIbgkn.jpg",
@@ -1987,13 +2305,16 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "ebook",
       "found-fiction",
       "found-footage",
-      "gay",
-      "horror",
       "lgbt",
       "psychological horror"
     ],
@@ -2008,12 +2329,16 @@
     "price": "$22.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
-      "fantasy",
+      "book",
       "imaginary-turtles",
       "indie",
       "open00",
+      "role playing",
       "vsdm"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTQxMjY1OS8xNzY4ODU3MC5wbmc=/347x500/FQOPe%2B.png",
@@ -2025,15 +2350,32 @@
     "author": "Sword & Kettle Press",
     "description": "Are you ready to wander into the woods? Bewildered is Jessie Ulmer’s collection of Hansel & Gretel reimaginings. These prose and poetry pieces explore the different ways in which people experience, remember, and process trauma, and the different ways fairy tales themselves are retold and recycled. Starting with two erasures of Maria Tatar’s early translation of Hansel & Gretel, Ulmer illustrates how Hansel and Gretel interact with the witch, the woods, and each other. Bewildered is a little sad, a little funny, a little queer, a little gross, and (hopefully) a little magical. Featuring a beautiful cover designed by Theo Young, this book contains 36 different pieces in a mix of prose and poetry that explore Hansel and Gretel's journeys into and out of the woods. Content Notes: blood & gore, body horror, cannibalism, child abandonment. Meet the Creators Jessie Ulmer (Author) is a queer writer and editor, an identical twin, and a swan by birth. She uses aspects of speculative fiction to explore themes of ability, physical and mental illness, gender, sexuality, and the intersections of identity within her work. She loves ghosts, impossible forests, the carnivorous sea, and believes in magic. She delights in editing for Sword & Kettle Press and her work has been featured in Gordon Square Review , Gingerbread House , Syntax & Salt , Corvid Queen , 3Elements Review , Yellow Chair Review , Sweet Tree Review , Dose of Dread , Rune Bear , Pins & Needles: A Journal of Contemporary Fairy Tales , Translunar Travelers Lounge , and Washington’s Best Emerging Poets Anthology. In 2020, her work was nominated for a Best of the Net Award. Theo Young (Artist, they/them) is a genderqueer artist living and working on Algonquin Anishinaabe land (Ottawa, ON). They are often inspired by folklore, horror, and nature. Recently, Theo has been reconnecting with their Slavic heritage and using their art as a means to do that. Payment Philosophy We use sliding-scale pricing for our e-books to increase accessibility. Please feel free to pay whatever amount feels right for you and your financial situation. And thank you—we're so glad you're interested in reading our books!",
     "price": "$6.00 USD",
-    "triggers": [],
-    "trigger_tags": [],
+    "triggers": [
+      "blood & gore",
+      "body horror",
+      "cannibalism",
+      "child abandonment."
+    ],
+    "trigger_tags": [
+      "abandonment",
+      "blood",
+      "body",
+      "cannibalism",
+      "child",
+      "gore",
+      "horror"
+    ],
+    "genre_tags": [
+      "fantasy",
+      "horror"
+    ],
     "other_tags": [
       "",
+      "book",
       "fairy tale",
-      "fantasy",
-      "horror",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
+      "sapphic",
       "trans",
       "witch"
     ],
@@ -2048,19 +2390,23 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "first-person",
-      "horror",
       "identity",
       "indie",
       "knights",
-      "lesbian",
       "lgbt",
       "mental health",
       "no ai",
       "psychological horror",
+      "sapphic",
       "short",
       "trauma"
     ],
@@ -2075,16 +2421,18 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "erotic",
-      "gay",
-      "horror",
       "indie",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "sci-fi",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjI5NTY0Ny8xMzYwMzQ0MC5qcGc=/347x500/mY9T3v.jpg",
@@ -2098,15 +2446,19 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "adult",
-      "horror",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
       "psychological horror",
-      "romance",
+      "sapphic",
       "short",
       "survival horror",
       "trans",
@@ -2123,13 +2475,16 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "book",
       "dragons",
-      "fantasy",
       "indie",
-      "lgbt",
-      "romance"
+      "lgbtqia"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE5Mzg4MTcwLnBuZw==/347x500/4aTbSr.png",
     "origin_url": "https://loustardust.itch.io/the-unbreakable-bond",
@@ -2142,12 +2497,16 @@
     "price": "$6.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "airship",
+      "book",
       "dungeons & dragons",
-      "fantasy",
-      "sci-fi",
+      "role playing",
       "setting-guide",
       "tabletop",
       "tabletop-roleplaying-game"
@@ -2163,10 +2522,12 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
-      "gay",
-      "lesbian",
-      "lgbt"
+      "achillean",
+      "book",
+      "lgbt",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMzA3MjgwNC8xOTA1OTczMC5qcGc=/347x500/JpWN7b.jpg",
     "origin_url": "https://jheijndermans.itch.io/the-nightstalkers-mark",
@@ -2179,16 +2540,19 @@
     "price": "$4.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "erotic",
-      "fantasy",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "romance",
       "romance-books",
+      "sapphic",
       "shifter",
       "trans",
       "werewolf"
@@ -2204,13 +2568,16 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "book",
       "erotic",
-      "lesbian",
       "lgbt",
-      "queer",
-      "romance"
+      "lgbtqia",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvNjkxMjUyLzM4MTEzMTEuanBn/347x500/XqIV74.jpg",
     "origin_url": "https://haridraws.itch.io/a-match-in-a-barrel-of-oil",
@@ -2223,14 +2590,19 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror",
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
       "fairy tale",
-      "fantasy",
-      "monsters",
-      "romance"
+      "monsters"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjgyNDY2Ni8xNjg3NTIxMy5wbmc=/347x500/sECVsF.png",
     "origin_url": "https://jheijndermans.itch.io/return-the-rose",
@@ -2255,16 +2627,20 @@
       "suicide",
       "themes"
     ],
+    "genre_tags": [
+      "fantasy",
+      "historical",
+      "romance"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotica",
-      "fantasy",
-      "historical",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "monsters",
-      "romance"
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjQ0NDcxOS8xNDQ4MzUwMi5wbmc=/347x500/JUPPL4.png",
     "origin_url": "https://bamstroker.itch.io/rusalka",
@@ -2277,14 +2653,18 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "demon",
       "erotic",
       "erotica",
-      "gay",
       "lgbt",
-      "queer",
+      "lgbtqia",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTE2OTk0My8xOTE5Mjc4My5wbmc=/347x500/J1LzTa.png",
@@ -2298,15 +2678,18 @@
     "price": "$5.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
-      "horror",
-      "lesbian",
       "lgbt",
       "monsters",
       "period piece",
+      "sapphic",
       "tentacles",
       "trans"
     ],
@@ -2321,17 +2704,20 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "dark-romance",
       "demon",
       "erotic",
-      "gay",
-      "horror",
-      "lesbian",
       "lgbt",
       "oneshot",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjI4Mzc5NC8xMzUzNjIzNy5qcGc=/347x500/XQZlmZ.jpg",
@@ -2345,17 +2731,20 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "demon",
-      "fantasy",
       "female protagonist",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "monsters",
-      "romance",
+      "sapphic",
       "short"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTkyNzIyOC8xMTMyOTc3Ny5wbmc=/347x500/1IZF7H.png",
@@ -2369,14 +2758,18 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
-      "gay",
-      "horror",
+      "book",
       "knights",
-      "lesbian",
-      "lgbt"
+      "lgbt",
+      "lgbtqia",
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE2ODk4MzIyLmpwZw==/347x500/Aci8%2FL.jpg",
     "origin_url": "https://cozystars.itch.io/dead-pulsating-tree",
@@ -2389,19 +2782,22 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "drm free",
       "ebook",
       "first-person",
-      "gay",
-      "horror",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "novel",
-      "queer",
-      "sci-fi",
+      "sapphic",
       "surreal"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvOTU2NjU4LzE5MjY2ODQ2LmpwZw==/347x500/DZShsL.jpg",
@@ -2415,16 +2811,20 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "horror"
+    ],
     "other_tags": [
       "",
+      "achillean",
+      "book",
       "dhampir",
       "erotica",
-      "gay",
-      "horror",
-      "lesbian",
       "lgbt",
       "medical",
       "medical-horror",
+      "sapphic",
       "trans",
       "vampire"
     ],
@@ -2439,14 +2839,19 @@
     "price": "$4.88 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
-      "dark fantasy",
+      "book",
       "drm free",
-      "fantasy",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "necromancy",
+      "sapphic",
       "zombie"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzkzMzY0ODMucG5n/347x500/89wnyT.png",
@@ -2460,16 +2865,22 @@
     "price": "$7.33 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "romance",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "asexual",
-      "dark fantasy",
+      "book",
       "drm free",
-      "fantasy",
-      "lesbian",
       "lgbt",
       "magic",
       "necromancy",
+      "sapphic",
       "zombie"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvNTA1MTcxLzkzMTA0NzEucG5n/347x500/FgI0Sz.png",
@@ -2483,12 +2894,15 @@
     "price": "$8.55 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "fantasy",
-      "lgbtqia",
-      "queer",
-      "sci-fi"
+      "book",
+      "lgbtqia"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjc0MDA4OC8xNjM0ODA4NS5wbmc=/347x500/rEfbYd.png",
     "origin_url": "https://vicorva.itch.io/the-old-goat-and-the-alien-veo-corva",
@@ -2501,17 +2915,21 @@
     "price": "$8.55 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
       "asexual",
-      "dark fantasy",
+      "book",
       "drm free",
-      "fantasy",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "magic",
       "necromancy",
-      "queer",
+      "sapphic",
       "zombie"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEzMDc1MzE2LnBuZw==/347x500/4IULnL.png",
@@ -2525,19 +2943,23 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
       "erotica",
-      "fantasy",
       "femdom",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "monsters",
       "nsfw",
-      "queer",
-      "romance"
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjQyODcwMC8xNzA3OTU3My5wbmc=/347x500/f8UFyL.png",
     "origin_url": "https://grendle.itch.io/the-serpents-devotee",
@@ -2567,15 +2989,19 @@
       "trans",
       "used"
     ],
+    "genre_tags": [
+      "fantasy",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "erotica",
-      "fantasy",
-      "gay",
       "lgbt",
+      "lgbtqia",
       "monsters",
-      "romance",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjgyMTU0MS8xNjg2Njc3NC5wbmc=/347x500/jzBq2i.png",
@@ -2609,14 +3035,18 @@
       "torture",
       "visceral"
     ],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
       "angel",
-      "dark fantasy",
+      "book",
       "demon",
       "erotic",
-      "gay",
       "lgbt",
       "lgbtqia",
       "nsfw",
@@ -2653,15 +3083,18 @@
       "references",
       "sexual"
     ],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
-      "horror",
-      "lesbian",
+      "book",
       "lgbt",
       "lgbtqia",
       "narrative",
       "novella",
       "paranormal",
+      "sapphic",
       "speculative-fiction",
       "supernatural",
       "young-adult"
@@ -2677,17 +3110,22 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
-    "other_tags": [
-      "",
-      "adult",
-      "blood",
-      "gay",
-      "lgbt",
-      "novella",
-      "queer",
-      "religious-horror",
+    "genre_tags": [
+      "horror",
       "romance",
       "sci-fi",
+      "slice_of_life"
+    ],
+    "other_tags": [
+      "",
+      "achillean",
+      "adult",
+      "blood",
+      "book",
+      "lgbt",
+      "lgbtqia",
+      "novella",
+      "religious-horror",
       "story rich",
       "war"
     ],
@@ -2727,11 +3165,16 @@
       "violence",
       "vomiting"
     ],
-    "other_tags": [
-      "",
+    "genre_tags": [
       "dark fantasy",
       "fantasy",
-      "gay",
+      "romance",
+      "slice_of_life"
+    ],
+    "other_tags": [
+      "",
+      "achillean",
+      "book",
       "knights",
       "lgbt",
       "lgbtqia",
@@ -2766,17 +3209,21 @@
       "sexually",
       "suggestive"
     ],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "fantasy",
-      "gay",
+      "achillean",
+      "book",
       "lgbt",
       "lgbtqia",
       "magic",
       "narrative",
       "necromancer",
-      "novella",
-      "romance"
+      "novella"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTk3MTQ4My8xNjI4MDQ2OS5wbmc=/347x500/OmK5Wg.png",
     "origin_url": "https://earlronove.itch.io/forevermore",
@@ -2789,13 +3236,18 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
+      "book",
       "demon",
       "familiar",
       "gender",
       "gender-feels",
       "lgbt",
+      "lgbtqia",
       "light-novel",
       "magic",
       "trans",
@@ -2813,17 +3265,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
+      "achillean",
       "apathy",
       "bipolar",
+      "book",
       "dysphoria",
       "emotional",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "perzine",
+      "sapphic",
       "trans",
       "zine",
       "zines"
@@ -2839,14 +3293,16 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
       "book",
-      "gay",
       "lgbt",
       "lgbtqia",
-      "mm-romance",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE4OTU2NTk1LmpwZw==/347x500/PYIIpu.jpg",
@@ -2871,7 +3327,11 @@
       "horror",
       "witchcraft"
     ],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
+      "book",
       "witch"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE2ODY2MTA5LnBuZw==/347x500/Cfbczb.png",
@@ -2885,12 +3345,15 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "audiobook",
-      "gay",
+      "book",
       "lgbt",
-      "romance",
       "supernatural",
       "vampire"
     ],
@@ -2905,13 +3368,15 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "audiobook",
-      "horror",
+      "book",
       "monsters",
-      "sci-fi",
-      "scifi",
       "short-story"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE1MjIwNTM0LnBuZw==/347x500/DhMmhd.png",
@@ -2923,12 +3388,44 @@
     "author": "Cozy Library Press",
     "description": "THIS IS THE AUDIOBOOK PRODUCTION OF DEAD COWPOKES DON'T WRANGLE FOR THE EBOOK PLEASE VISIT [LINK] This audio production is narrated by Richard Pendragon With more queers, weirds, and steers than you can shake a stick at, DEAD COWPOKES DON'T WRANGLE collects original weird west tales and art and will take you to the strangest plains over yonder, then further still. So tie up your horse, settle in to wet your whistle 'round the fire, and prepare to be amazed. When shape-shifters, duels, gunslingers, and strangers come to town, you best be saddling up for a hootin' hollerin' good time. DCDW TABLE OF CONTENTS & CONTENT WARNINGS A Handful Of Bullets - Tyler Battaglia Content Notes: Guns, religious abuse/cults, animal death, dead animals seen, a dash of body horror, suicidal ideation, murder, death, zombies High Noon In Prosperity - TK Jameson Content Notes: Blood, brief corpse description, brief dysphoria mention, codependency, death/murder of a partner, decapitation, dubious consent, explicit sexual content, grief, manipulation, power imbalance, unhealthy relationships, use of swords Red As Blood, Black As Tar - mars adler Content Notes: Blood, gore, corpse description, body horror, death, on page murder, gun use and mention, injury (off screen but discussed), animal death (off screen but the aftermath described), light sexual content, misogyny (moderate), unhealthy relationships depicted, nonbinary person described as having a cock Ghosts Of The Past - Wendy Richmond Artwork Eyes Of The Apostle - Sirius Content Notes: Descriptions of death & corpse, eye gouging A Golden Gaze - Shane Reid Content Notes: Body horror, nightmares, mutilation, teeth pulling, eating organs, gore, blood, a child sort of watches their parent be murdered, coercion and manipulation, death, light sexual content Inkcap - Yune Artwork Powerful, Thirsty - Rain Corbyn Content Notes: Body horror violence to animals (a hare and wolf) and a human, all of whom die as a result. Explicit sex: cis man’s first time with a trans man. It goes great but there is some surprise and awkwardness at the reveal. Detailed consumption of bodily fluids in and outside of a sexual setting, voyeurism, period sex. Mentioned: Imperialism, self-denial, heavy alcohol use, queerness not normalized, parental pressure, suicide/self destructive behavior This Is No Place To Raise A Family - Magnus Thorne Content Notes: Blood, gore, dead animals, trans male pregnancy (references to previous pregnancy/wanting children and assumed insemination on page), off-screen character death (familiar and unfamiliar) The Birth Of A Whisper - Olive J. Kelley Content Notes: Mentions of past miscarriage, risky pregnancy & childbirth, implied sexual content, body horror, gore, aliens Still Alive - Marley Nissley Artwork Where The Road Ends - Morgan Dante Content Notes: Blood, injury, body dysmorphia Your Death Would Taste Sweeter - Wren V. Lothaire Content Notes: Blood & gore, explicit on page sexual content, on page murder, on page death, light cannibalism (human drinking blood), body horror, violence, brief gun violence, use of words like pussy and cunt in descriptions of a trans man’s body Membrane - HS Wolfe Content Notes: Vampires drinking blood, gore, human death, use of guns and gun wounds, spitballing with blood, fisting, non-human cock Incisor - Yune Artwork Like A Bullet To The Head - Claude Hamesh Content Notes: Animal harm, guns, minor transphobia There Have Always Been Wolves Here - A.A. Fairview Content Notes: Gun violence, murder, kidnapping, brief transphobia, explicit sex, teratophilia",
     "price": "$10.99 USD",
-    "triggers": [],
-    "trigger_tags": [],
+    "triggers": [
+      "Guns",
+      "religious abuse/cults",
+      "animal death",
+      "dead animals seen",
+      "a dash of body horror",
+      "suicidal ideation",
+      "murder",
+      "death",
+      "zombies"
+    ],
+    "trigger_tags": [
+      "abuse",
+      "animal",
+      "animals",
+      "body",
+      "cults",
+      "dash",
+      "dead",
+      "death",
+      "guns",
+      "horror",
+      "ideation",
+      "murder",
+      "religious",
+      "seen",
+      "suicidal",
+      "zombies"
+    ],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "audiobook",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
+      "other",
+      "sapphic",
       "trans",
       "vampire",
       "zombie"
@@ -2944,15 +3441,21 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "audiobook",
+      "book",
       "cozy",
       "cozy-fantasy",
       "dragons",
       "female protagonist",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE1OTEwODE1LmpwZw==/347x500/zyHl7U.jpg",
@@ -2966,12 +3469,14 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
       "audiobook",
       "deconstruction",
       "poems",
       "poetry",
+      "soundtrack",
       "writing"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTczOTE1My8xMDIzNTgwOS5qcGc=/347x500/fawJJ3.jpg",
@@ -2985,8 +3490,12 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
-      "audiobook"
+      "audiobook",
+      "book"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMjY5OTgwNi8xNjEwODQzMy5wbmc=/347x500/4kI%2Fna.png",
     "origin_url": "https://ninawolverina.itch.io/into-the-deep-and-the-dark-audiobook",
@@ -2999,15 +3508,19 @@
     "price": "$15.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
       "audiobook",
       "economy",
-      "horror",
-      "lesbian",
       "lgbt",
       "novel",
       "red-markets",
+      "role playing",
+      "sapphic",
+      "soundtrack",
       "survival horror",
       "zombie"
     ],
@@ -3022,9 +3535,11 @@
     "price": "$12.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
-      "lesbian",
+      "book",
       "lgbt",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzI0MDUyODAucG5n/347x500/les3I2.png",
@@ -3038,11 +3553,15 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy"
+    ],
     "other_tags": [
       "",
+      "action",
       "audiobook",
+      "book",
       "coming of age",
-      "dark fantasy",
       "female protagonist",
       "lgbtqia",
       "magical realism",
@@ -3061,17 +3580,20 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "anticapitalist",
       "audiobook",
+      "book",
       "female protagonist",
-      "lesbian",
       "lgbt",
       "long-distance-relationship",
-      "nonbinary",
       "polycule",
-      "sci-fi",
+      "sapphic",
       "t4t",
       "trans"
     ],
@@ -3086,16 +3608,20 @@
     "price": "$7.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "audiobook",
       "bdsm",
       "erotic",
-      "gay",
-      "lesbian",
       "lgbt",
+      "lgbtqia",
       "nsfw",
-      "sci-fi",
+      "sapphic",
+      "soundtrack",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzE0MjA4NDExLmpwZw==/347x500/A3rNiB.jpg",
@@ -3109,12 +3635,15 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [],
     "other_tags": [
       "",
       "audiobook",
-      "lesbian",
       "lgbt",
       "mecha",
+      "other",
+      "role playing",
+      "sapphic",
       "tabletop role-playing game"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTc5MjI0OC8xMDUzMDk2OC5wbmc=/347x500/tBC%2BIQ.png",
@@ -3167,10 +3696,14 @@
       "will",
       "wrestling"
     ],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "queer",
-      "sci-fi"
+      "book",
+      "lgbtqia"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEzMzM4NDgxLmpwZw==/347x500/bzR7Hb.jpg",
     "origin_url": "https://ialpiriel.itch.io/up-with-the-star",
@@ -3183,10 +3716,14 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
-      "queer",
-      "sci-fi"
+      "book",
+      "lgbtqia"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEzMzU1MTEzLmpwZw==/347x500/uXiiV8.jpg",
     "origin_url": "https://ialpiriel.itch.io/up-with-the-star-audiobook",
@@ -3199,16 +3736,20 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "audiobook",
+      "book",
       "cozy",
       "cute",
-      "dark fantasy",
       "dark humor",
-      "fantasy",
       "female protagonist",
-      "slice of life",
+      "lgbtqia",
       "urban-fantasy",
       "witch"
     ],
@@ -3223,18 +3764,22 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "creepy",
       "dark",
       "erotic",
-      "gay",
-      "horror",
       "indie",
-      "lesbian",
       "lgbt",
-      "queer",
+      "lgbtqia",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzEzOTYyMjY5LmpwZw==/347x500/AsVG3H.jpg",
@@ -3248,16 +3793,20 @@
     "price": "$10.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "dragons",
       "erotica",
       "knights",
-      "lesbian",
       "lgbt",
       "monster girls",
       "monster-boyfriend",
-      "romance",
+      "sapphic",
       "trans",
       "transformation"
     ],
@@ -3272,20 +3821,23 @@
     "price": "$2.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror"
+    ],
     "other_tags": [
       "",
       "2d",
+      "achillean",
       "animals",
+      "book",
       "cute",
       "dark",
       "dogs",
       "dystopian",
-      "gay",
-      "horror",
-      "lesbian",
       "lgbt",
       "male protagonist",
       "rabies",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1nLzcwODc1NTkucG5n/347x500/9M8TZd.png",
@@ -3304,13 +3856,17 @@
       "within",
       "world"
     ],
+    "genre_tags": [
+      "fantasy",
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "adult",
-      "fantasy",
-      "lesbian",
+      "book",
       "lgbt",
-      "romance",
+      "sapphic",
       "sicko-lesbians",
       "trans"
     ],
@@ -3325,14 +3881,18 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "book",
       "erotic",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "monster girls",
       "mystery",
+      "sapphic",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTQ5NzcyNS84NzI5ODA3LmpwZw==/347x500/a%2FTZmr.jpg",
@@ -3346,15 +3906,19 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "epub",
-      "gay",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "queer",
-      "romance",
+      "physical game",
+      "role playing",
+      "sapphic",
       "tabletop",
       "tabletop role-playing game",
       "urban-fantasy"
@@ -3370,11 +3934,14 @@
     "price": "$1.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance"
+    ],
     "other_tags": [
       "",
+      "book",
       "lgbtqia",
       "mystery",
-      "romance",
       "vampire"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMzE4NTgyMC8xOTAyNTA0OS5wbmc=/347x500/0Vp5FW.png",
@@ -3388,9 +3955,13 @@
     "price": "$3.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy"
+    ],
     "other_tags": [
       "",
-      "fantasy",
+      "adventure",
+      "book",
       "lgbt",
       "lgbtqia",
       "magical-girl",
@@ -3407,16 +3978,21 @@
     "price": "$3.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "fantasy",
+      "sci-fi",
+      "slice_of_life"
+    ],
     "other_tags": [
       "",
       "adult",
+      "book",
       "erotic",
-      "fantasy",
-      "lesbian",
       "lgbt",
       "lgbtqia",
       "monster girls",
       "monsters",
+      "sapphic",
       "short",
       "trans",
       "transformation",
@@ -3433,14 +4009,17 @@
     "price": "$6.99 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "book",
       "cyberpunk",
-      "horror",
-      "lesbian",
       "lgbt",
       "lgbtqia",
-      "sci-fi",
+      "sapphic",
       "sicko-lesbians",
       "trans"
     ],
@@ -3455,17 +4034,21 @@
     "price": "$4.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "demon",
       "erotica",
-      "gay",
       "lgbt",
+      "lgbtqia",
       "priest",
-      "prose",
-      "queer",
-      "romance"
+      "prose"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTkyNjA4OC8xMTM3NTUzMC5wbmc=/347x500/9la8qx.png",
     "origin_url": "https://ramlightly.itch.io/the-confession-booth",
@@ -3478,14 +4061,17 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "sci-fi"
+    ],
     "other_tags": [
       "",
       "adult",
       "aliens",
+      "book",
       "erotica",
-      "lesbian",
       "lgbt",
-      "sci-fi"
+      "sapphic"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMTM5NDkwMi84MTI5MDI3LnBuZw==/347x500/w39P2V.png",
     "origin_url": "https://taylor-titmouse.itch.io/brilliant01",
@@ -3498,14 +4084,17 @@
     "price": null,
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "dark fantasy",
+      "fantasy"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
       "book",
-      "dark fantasy",
       "demon",
       "erotic",
-      "gay",
       "kink-heavy",
       "lgbt",
       "vampire"
@@ -3521,19 +4110,22 @@
     "price": "$5.00 USD",
     "triggers": [],
     "trigger_tags": [],
+    "genre_tags": [
+      "horror",
+      "romance",
+      "sci-fi"
+    ],
     "other_tags": [
       "",
+      "achillean",
       "adult",
+      "book",
       "dark",
       "erotic",
       "futuristic",
-      "gay",
-      "horror",
       "lgbt",
+      "lgbtqia",
       "no ai",
-      "queer",
-      "romance",
-      "sci-fi",
       "trans"
     ],
     "cover_image": "https://img.itch.zone/aW1hZ2UvMzE3MzUwNi8xODk0ODY4OS5wbmc=/347x500/sFhkQw.png",
