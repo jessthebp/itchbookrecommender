@@ -275,9 +275,6 @@ function buildTagCheckboxes() {
   const tagSet = new Set();
 
   allBooks.forEach(book => {
-    if (Array.isArray(book.orientation_tags)) {
-      book.orientation_tags.forEach(t => tagSet.add(t.toLowerCase()));
-    }
     if (Array.isArray(book.genre_tags)) {
       book.genre_tags.forEach(t => tagSet.add(t.toLowerCase()));
     }
