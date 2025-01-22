@@ -33,10 +33,12 @@
       margin: 2%;
     }
 
-    .tag-section {
-      margin-bottom: 1rem;
+    .tag-category {
+      margin-bottom: 1.2rem;
     }
-    .tag-section strong {
+    .tag-category h3 {
+      margin: 0.4rem 0;
+      font-size: 1.1rem;
       color: var(--deep-purple);
     }
     .tag-section label {
@@ -47,22 +49,8 @@
       user-select: none;
       color: #4A3B3B;
     }
-    .tag-section.hide {
-      display: none;
-    }
-
-    label[for], .filters label {
-      font-weight: 600;
-    }
-    input[type="text"] {
-      padding: 0.3rem 0.6rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-left: 0.4rem;
-    }
-    input[type="text"]:focus {
-      outline: none;
-      border-color: var(--dusty-orange);
+    .hide {
+      display: none !important;
     }
 
     .button-row {
@@ -134,13 +122,11 @@
       color: var(--rust-red);
       margin: 0 0 0.3rem 0;
     }
-    /* small genre text under title */
-    .card .genre-info {
+    .genre-info {
       font-size: 0.9rem;
       color: #666;
       margin-bottom: 0.5rem;
     }
-
     .author {
       font-style: italic;
       color: #666;
@@ -155,7 +141,7 @@
       color: #444;
       font-size: 0.9rem;
     }
-    /* Animation overlay */
+
     .animation-overlay {
       position: fixed;
       top: 0;
@@ -181,20 +167,25 @@
 <body>
 
 <h1>Itchio Book Recommender</h1>
-<h3>Made by <a href="https://bsky.app/profile/whatbettyredd.bsky.social"> Bread </a></h3>
-<h3> Add your own!! <a href="https://forms.gle/xTrhovkyzeKv5LFNA">Form here</a></h3>
 
 <div class="filters">
   <h2>Filters</h2>
   <button id="toggleTagsBtn">Hide/Show Tag Filters</button>
 
-  <div>
-    <label>Filter tags:
-      <input type="text" id="tagSearch" placeholder="type to filter tags" />
-    </label>
+  <div class="tag-category">
+    <h3>Orientation Tags</h3>
+    <div id="orientationSection" class="tag-section"></div>
   </div>
 
-  <div id="tagSection" class="tag-section"></div>
+  <div class="tag-category">
+    <h3>Genre Tags</h3>
+    <div id="genreSection" class="tag-section"></div>
+  </div>
+
+  <div class="tag-category">
+    <h3>Other Tags</h3>
+    <div id="otherSection" class="tag-section"></div>
+  </div>
 
   <div>
     <label>Price:
@@ -208,7 +199,7 @@
 
   <div>
     <label>Exclude triggers (comma-separated):
-      <input type="text" id="excludeTriggers" placeholder="e.g. gore, violence" />
+      <input type="text" id="excludeTriggers" placeholder="gore, violence" />
     </label>
   </div>
 
@@ -227,9 +218,8 @@
 
 <script>
 let allBooks = [];
-let masterTagList = [];
-let displayedTags = [];
 
+/** Price check helper */
 function getPriceCategory(priceString) {
   if (!priceString || priceString.trim().length === 0) {
     return "free";
@@ -241,155 +231,131 @@ function getPriceCategory(priceString) {
   return "paid";
 }
 
-function createCheckbox(id, label) {
-  const wrapper = document.createElement("label");
-  wrapper.innerHTML = `
-    <input type="checkbox" value="${id}" />
-    ${label}
-  `;
-  return wrapper;
-}
+/** Build distinct sets of orientation, genre, other tags from data. */
+let orientationMaster = [];
+let genreMaster = [];
+let otherMaster = [];
 
-function buildTagCheckboxes() {
-  const tagSet = new Set();
+function buildTagSets() {
+  const orientationSet = new Set();
+  const genreSet = new Set();
+  const otherSet = new Set();
+
   allBooks.forEach(book => {
-    // gather from genre_tags, other_tags
+    if (Array.isArray(book.orientation_tags)) {
+      book.orientation_tags.forEach(t => orientationSet.add(t));
+    }
     if (Array.isArray(book.genre_tags)) {
-      book.genre_tags.forEach(t => tagSet.add(t.toLowerCase()));
+      book.genre_tags.forEach(t => genreSet.add(t));
     }
     if (Array.isArray(book.other_tags)) {
-      book.other_tags.forEach(t => tagSet.add(t.toLowerCase()));
+      book.other_tags.forEach(t => otherSet.add(t));
     }
   });
-  masterTagList = Array.from(tagSet).sort();
-  showTagCheckboxes("");
-  // hide by default
-  document.getElementById("tagSection").classList.add("hide");
+
+  orientationMaster = Array.from(orientationSet).sort();
+  genreMaster = Array.from(genreSet).sort();
+  otherMaster = Array.from(otherSet).sort();
 }
 
-function showTagCheckboxes(query) {
-  const oldChecked = getSelectedTags();
-  const tagSection = document.getElementById("tagSection");
-  tagSection.innerHTML = "<strong>Tags:</strong><br/>";
+/** Fill out checkboxes for each category. */
+function buildCheckboxes() {
+  buildTagSets();
 
-  displayedTags = masterTagList.filter(tag => tag.includes(query));
-  displayedTags.sort((a, b) => {
-    const aIsChecked = oldChecked.includes(a);
-    const bIsChecked = oldChecked.includes(b);
-    if (aIsChecked === bIsChecked) {
-      return a.localeCompare(b);
-    }
-    return aIsChecked ? -1 : 1;
-  });
+  renderCheckboxSection("orientationSection", orientationMaster);
+  renderCheckboxSection("genreSection", genreMaster);
+  renderCheckboxSection("otherSection", otherMaster);
+}
 
-  displayedTags.forEach(tag => {
-    const cb = createCheckbox(tag, tag);
-    const inputEl = cb.querySelector("input");
-    if (oldChecked.includes(tag)) {
-      inputEl.checked = true;
-    }
-    tagSection.appendChild(cb);
+/** Helper to create checkboxes for a given DOM section and list of tags. */
+function renderCheckboxSection(sectionId, listOfTags) {
+  const container = document.getElementById(sectionId);
+  container.innerHTML = ""; // clear
+
+  listOfTags.forEach(tag => {
+    const label = document.createElement("label");
+    label.innerHTML = `<input type="checkbox" value="${tag}" /> ${tag}`;
+    container.appendChild(label);
   });
 }
 
-function getSelectedTags() {
-  const checks = document
-    .getElementById("tagSection")
-    .querySelectorAll("input[type=checkbox]:checked");
+/** Gather selected tags from each category. */
+function getSelectedOrientationTags() {
+  const container = document.getElementById("orientationSection");
+  const checks = container.querySelectorAll("input[type=checkbox]:checked");
   const vals = [];
-  checks.forEach(chk => vals.push(chk.value));
+  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
+  return vals;
+}
+function getSelectedGenreTags() {
+  const container = document.getElementById("genreSection");
+  const checks = container.querySelectorAll("input[type=checkbox]:checked");
+  const vals = [];
+  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
+  return vals;
+}
+function getSelectedOtherTags() {
+  const container = document.getElementById("otherSection");
+  const checks = container.querySelectorAll("input[type=checkbox]:checked");
+  const vals = [];
+  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
   return vals;
 }
 
 function filterData() {
-  const selectedTags = getSelectedTags();
+  // gather user selections
+  const orientationSelected = getSelectedOrientationTags();
+  const genreSelected = getSelectedGenreTags();
+  const otherSelected = getSelectedOtherTags();
   const priceFilter = document.getElementById("priceFilter").value;
   const excludeInput = document.getElementById("excludeTriggers").value;
-  const excludedTriggers = excludeInput
-    .split(",")
-    .map(t => t.trim().toLowerCase())
-    .filter(t => t);
+  const excludedTriggers = excludeInput.split(",").map(t => t.trim().toLowerCase()).filter(t => t);
 
+  // do final filter
   return allBooks.filter(book => {
-    // 1) Tag Filter
-    if (selectedTags.length > 0) {
-      const bookTagSet = new Set();
-      if (Array.isArray(book.orientation_tags)) {
-        book.orientation_tags.forEach(t => bookTagSet.add(t.toLowerCase()));
-      }
-      if (Array.isArray(book.genre_tags)) {
-        book.genre_tags.forEach(t => bookTagSet.add(t.toLowerCase()));
-      }
-      if (Array.isArray(book.other_tags)) {
-        book.other_tags.forEach(t => bookTagSet.add(t.toLowerCase()));
-      }
-      // must have all selected
-      const hasAll = selectedTags.every(tag => bookTagSet.has(tag));
-      if (!hasAll) return false;
+    // orientation
+    if (orientationSelected.length > 0) {
+      const bookOrientationSet = new Set((book.orientation_tags || []).map(x => x.toLowerCase()));
+      const hasAllOrientation = orientationSelected.every(tag => bookOrientationSet.has(tag));
+      if (!hasAllOrientation) return false;
+    }
+    // genre
+    if (genreSelected.length > 0) {
+      const bookGenreSet = new Set((book.genre_tags || []).map(x => x.toLowerCase()));
+      const hasAllGenre = genreSelected.every(tag => bookGenreSet.has(tag));
+      if (!hasAllGenre) return false;
+    }
+    // other
+    if (otherSelected.length > 0) {
+      const bookOtherSet = new Set((book.other_tags || []).map(x => x.toLowerCase()));
+      const hasAllOther = otherSelected.every(tag => bookOtherSet.has(tag));
+      if (!hasAllOther) return false;
     }
 
-    // 2) Price Filter
+    // Price
     if (priceFilter !== "all") {
       const cat = getPriceCategory(book.price);
       if (cat !== priceFilter) return false;
     }
 
-    // 3) Exclude triggers
+    // Exclude triggers
     if (excludedTriggers.length > 0 && Array.isArray(book.triggers)) {
       const trigStr = book.triggers.join(" ").toLowerCase();
       const hasExcluded = excludedTriggers.some(ex => trigStr.includes(ex));
       if (hasExcluded) return false;
     }
+
     return true;
   });
 }
 
-function renderOneBook(book) {
-  const resultsDiv = document.getElementById("results");
-  resultsDiv.innerHTML = "";
-
-  if (!book) {
-    resultsDiv.innerHTML = "<p>No book to display.</p>";
+function pickBook() {
+  const filtered = filterData();
+  if (filtered.length === 0) {
+    document.getElementById("results").innerHTML = "<p>No books match these filters.</p>";
     return;
   }
-
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  const coverHtml = book.cover_image
-    ? `<img src="${book.cover_image}" alt="Cover">`
-    : "";
-  const title = book.title || "Untitled";
-  const author = book.author ? `by ${book.author}` : "";
-  const price = book.price || "";
-  const triggers = (book.triggers || []).join("; ");
-
-  const orientationTags = (book.orientation_tags || []).join(", ");
-  const genreTags = (book.genre_tags || []).join(", ");
-  const otherTags = (book.other_tags || []).join(", ");
-
-  card.innerHTML = `
-    ${coverHtml}
-    <div class="card-content">
-      <h3>${title}</h3>
-      <!-- Genre right under the title in smaller font -->
-      <div class="genre-info">
-        ${genreTags ? `<strong>Genre:</strong> ${genreTags}` : ""}
-      </div>
-      <div class="author">${author}</div>
-      <div class="price">${price}</div>
-      <p>${book.description || ""}</p>
-
-      <div class="triggers"><strong>Triggers:</strong> ${triggers}</div>
-      <div style="font-size:0.9rem; color:#666;">
-        <p><strong> Tags:</strong> ${otherTags}</p>
-      </div>
-
-      <p><a href="${book.final_url}" target="_blank">View on itch.io</a></p>
-    </div>
-  `;
-
-  resultsDiv.appendChild(card);
+  animateSelection(filtered);
 }
 
 function animateSelection(arr) {
@@ -414,58 +380,91 @@ function animateSelection(arr) {
   }, 100);
 }
 
-function pickBook() {
-  const filtered = filterData();
-  if (filtered.length === 0) {
-    document.getElementById("results").innerHTML =
-      "<p>No books found with those filters. Try adjusting your selection.</p>";
+function renderOneBook(book) {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  if (!book) {
+    resultsDiv.innerHTML = "<p>No book to display.</p>";
     return;
   }
-  animateSelection(filtered);
+
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  const coverHtml = book.cover_image
+    ? `<img src="${book.cover_image}" alt="Cover">`
+    : "";
+  const title = book.title || "Untitled";
+  const author = book.author ? `by ${book.author}` : "";
+  const price = book.price || "";
+  const triggers = (book.triggers || []).join("; ");
+
+  const orientationStr = (book.orientation_tags || []).join(", ");
+  const genreStr = (book.genre_tags || []).join(", ");
+  const otherStr = (book.other_tags || []).join(", ");
+
+  card.innerHTML = `
+    ${coverHtml}
+    <div class="card-content">
+      <h3>${title}</h3>
+      <div class="genre-info">${genreStr ? `<strong>Genre:</strong> ${genreStr}` : ""}</div>
+      <div class="author">${author}</div>
+      <div class="price">${price}</div>
+      <p>${book.description || ""}</p>
+
+      <div class="triggers"><strong>Triggers:</strong> ${triggers}</div>
+      <div style="font-size:0.9rem; color:#666;">
+        <p><strong>Orientation:</strong> ${orientationStr}</p>
+        <p><strong>Other Tags:</strong> ${otherStr}</p>
+      </div>
+
+      <p><a href="${book.final_url}" target="_blank">View on itch.io</a></p>
+    </div>
+  `;
+  resultsDiv.appendChild(card);
 }
 
 function clearFilters() {
-  const tagSection = document.getElementById("tagSection");
-  const checks = tagSection.querySelectorAll("input[type=checkbox]");
-  checks.forEach(chk => { chk.checked = false; });
+  // uncheck orientation
+  document.querySelectorAll("#orientationSection input[type=checkbox]")
+    .forEach(ch => ch.checked = false);
+  // uncheck genre
+  document.querySelectorAll("#genreSection input[type=checkbox]")
+    .forEach(ch => ch.checked = false);
+  // uncheck other
+  document.querySelectorAll("#otherSection input[type=checkbox]")
+    .forEach(ch => ch.checked = false);
 
   document.getElementById("priceFilter").value = "all";
   document.getElementById("excludeTriggers").value = "";
   document.getElementById("results").innerHTML = "";
-
-  document.getElementById("tagSearch").value = "";
-  showTagCheckboxes("");
 }
 
 function toggleTags() {
-  const tagSection = document.getElementById("tagSection");
-  if (tagSection.classList.contains("hide")) {
-    tagSection.classList.remove("hide");
-  } else {
-    tagSection.classList.add("hide");
-  }
+  const orientationSec = document.getElementById("orientationSection");
+  const genreSec = document.getElementById("genreSection");
+  const otherSec = document.getElementById("otherSection");
+  orientationSec.classList.toggle("hide");
+  genreSec.classList.toggle("hide");
+  otherSec.classList.toggle("hide");
 }
 
-// MAIN
+/** MAIN */
 fetch("parsed_data.json")
-  .then(response => response.json())
+  .then(r => r.json())
   .then(data => {
     allBooks = data;
-    buildTagCheckboxes();
+    buildCheckboxes();
   })
   .catch(err => {
     console.error("Error loading JSON:", err);
-    document.getElementById("results").innerHTML =
-      "<p>Could not load data. Check console.</p>";
+    document.getElementById("results").innerHTML = "<p>Could not load data.</p>";
   });
 
 document.getElementById("pickBookBtn").addEventListener("click", pickBook);
 document.getElementById("clearFiltersBtn").addEventListener("click", clearFilters);
 document.getElementById("toggleTagsBtn").addEventListener("click", toggleTags);
-document.getElementById("tagSearch").addEventListener("input", e => {
-  showTagCheckboxes(e.target.value.toLowerCase());
-});
 </script>
-
 </body>
 </html>
