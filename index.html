@@ -4,48 +4,40 @@
   <meta charset="UTF-8" />
   <title>Itchio Book Recommender</title>
   <style>
-
     :root {
       --rust-red: #A2574F;
       --deep-purple: #993A8B;
       --dusty-orange: #E68057;
-      --filterheight: 30%;
     }
     body {
       margin: 20px;
       max-width: 900px;
       line-height: 1.5;
       font-family: "Trebuchet MS", sans-serif;
-      background-color: #FDF9F7; /* a light near-white for easy reading */
+      background-color: #FDF9F7;
       color: #4A3B3B;
     }
     h1, h2 {
-      color: #A2574F; /* Rust Red for headings */
+      color: var(--rust-red);
       margin: 0.8rem 0;
-    }
-    div {
-      margin-bottom: 1rem;
-      height: fit-content;
-      width: initial;
     }
 
     .filters {
-      background: #FDF9F7; /* keep it near-white so text is easy to read */
+      background: #FDF9F7;
       border: 2px solid #BF7587;
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.12);
       float: left;
-        width: 30%;
+      width: 30%;
       margin: 2%;
-
     }
 
     .tag-section {
       margin-bottom: 1rem;
     }
     .tag-section strong {
-      color: #993A8B; /* Deep Purple for emphasis */
+      color: var(--deep-purple);
     }
     .tag-section label {
       display: inline-block;
@@ -70,7 +62,7 @@
     }
     input[type="text"]:focus {
       outline: none;
-      border-color: #E68057; /* Dusty Orange focus */
+      border-color: var(--dusty-orange);
     }
 
     .button-row {
@@ -79,10 +71,9 @@
       gap: 0.8rem;
       flex-wrap: wrap;
     }
-
     button,
     select {
-      background: #E68057;
+      background: var(--dusty-orange);
       color: #fff;
       border: none;
       border-radius: 6px;
@@ -93,7 +84,7 @@
     }
     button:hover,
     select:hover {
-      background: #DA6F44; /* Slightly darker orange on hover */
+      background: #DA6F44;
       transform: scale(1.02);
     }
     button:active,
@@ -110,7 +101,7 @@
     .results {
       margin-top: 1rem;
       padding: 1.2rem;
-      border: 2px solid #BF7587; /* Mauve border */
+      border: 2px solid #BF7587;
       border-radius: 8px;
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -118,7 +109,6 @@
       height: 100%;
     }
 
-    /* Card styling */
     .card {
       display: flex;
       flex-direction: row;
@@ -141,9 +131,16 @@
       flex: 1;
     }
     .card h3 {
-      color: #A2574F;
+      color: var(--rust-red);
       margin: 0 0 0.3rem 0;
     }
+    /* small genre text under title */
+    .card .genre-info {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
     .author {
       font-style: italic;
       color: #666;
@@ -152,17 +149,12 @@
     .price {
       font-weight: bold;
       margin-bottom: 0.5rem;
-      color: #993A8B; /* use deep purple for price text */
+      color: var(--deep-purple);
     }
     .triggers {
       color: #444;
       font-size: 0.9rem;
     }
-    /* Orientation, genre, other tags */
-    .card-content p strong {
-      color: #993A8B;
-    }
-
     /* Animation overlay */
     .animation-overlay {
       position: fixed;
@@ -170,7 +162,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(162,87,79,0.8); /* Rust Red overlay w/ alpha */
+      background: rgba(162,87,79,0.8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -191,9 +183,9 @@
 <h1>Itchio Book Recommender</h1>
 <h3>Made by <a href="https://bsky.app/profile/whatbettyredd.bsky.social"> Bread </a></h3>
 <h3> Add your own!! <a href="https://forms.gle/xTrhovkyzeKv5LFNA">Form here</a></h3>
+
 <div class="filters">
   <h2>Filters</h2>
-
   <button id="toggleTagsBtn">Hide/Show Tag Filters</button>
 
   <div>
@@ -204,7 +196,6 @@
 
   <div id="tagSection" class="tag-section"></div>
 
-  <!-- Price filter -->
   <div>
     <label>Price:
       <select id="priceFilter">
@@ -215,10 +206,8 @@
     </label>
   </div>
 
-  <!-- Exclude triggers -->
   <div>
-    <label>
-      Exclude triggers (comma-separated):
+    <label>Exclude triggers (comma-separated):
       <input type="text" id="excludeTriggers" placeholder="e.g. gore, violence" />
     </label>
   </div>
@@ -229,10 +218,8 @@
   </div>
 </div>
 
-<div id="results" class="results">
-</div>
+<div id="results" class="results"></div>
 
-<!-- Hidden overlay for the selection animation -->
 <div id="animationOverlay" class="animation-overlay" style="display: none;">
   <p>Picking a random item...</p>
   <h2 id="animationTitle"></h2>
@@ -243,13 +230,10 @@ let allBooks = [];
 let masterTagList = [];
 let displayedTags = [];
 
-/** Helper: free or paid, free is null. */
 function getPriceCategory(priceString) {
-  // If it's null or an empty string, count it as free
   if (!priceString || priceString.trim().length === 0) {
     return "free";
   }
-
   const lower = priceString.toLowerCase();
   if (lower.includes("free") || lower.includes("$0.00")) {
     return "free";
@@ -257,8 +241,6 @@ function getPriceCategory(priceString) {
   return "paid";
 }
 
-
-/** Create a checkbox input+label for a tag. */
 function createCheckbox(id, label) {
   const wrapper = document.createElement("label");
   wrapper.innerHTML = `
@@ -268,13 +250,10 @@ function createCheckbox(id, label) {
   return wrapper;
 }
 
-/**
- *  call showTagCheckboxes('') to display them all.
- */
 function buildTagCheckboxes() {
   const tagSet = new Set();
-
   allBooks.forEach(book => {
+    // gather from genre_tags, other_tags
     if (Array.isArray(book.genre_tags)) {
       book.genre_tags.forEach(t => tagSet.add(t.toLowerCase()));
     }
@@ -282,60 +261,43 @@ function buildTagCheckboxes() {
       book.other_tags.forEach(t => tagSet.add(t.toLowerCase()));
     }
   });
-
   masterTagList = Array.from(tagSet).sort();
-  showTagCheckboxes(""); // show them all initially
-    const tagSection = document.getElementById("tagSection");
-  tagSection.classList.add("hide");
-
+  showTagCheckboxes("");
+  // hide by default
+  document.getElementById("tagSection").classList.add("hide");
 }
-function showTagCheckboxes(query) {
-  // 1) Gather currently-checked tags from the DOM
-  const oldChecked = getSelectedTags();
 
-  // 2) Clear existing DOM content
+function showTagCheckboxes(query) {
+  const oldChecked = getSelectedTags();
   const tagSection = document.getElementById("tagSection");
   tagSection.innerHTML = "<strong>Tags:</strong><br/>";
 
-  // 3) Filter masterTagList by the query (substring)
-  displayedTags = masterTagList.filter(tag =>
-    tag.includes(query)
-  );
-
-  // 4) Sort so that any tag found in oldChecked appears first
+  displayedTags = masterTagList.filter(tag => tag.includes(query));
   displayedTags.sort((a, b) => {
     const aIsChecked = oldChecked.includes(a);
     const bIsChecked = oldChecked.includes(b);
-
     if (aIsChecked === bIsChecked) {
-      // both same status => sort alphabetical
       return a.localeCompare(b);
     }
-    // if a is checked but b is not, a goes first
     return aIsChecked ? -1 : 1;
   });
 
-  // 5) Rebuild checkboxes in the new order
   displayedTags.forEach(tag => {
-    const wrapper = document.createElement("label");
-    wrapper.innerHTML = `
-      <input type="checkbox" value="${tag}" />
-      ${tag}
-    `;
-    // If it was previously checked, mark it checked
-    const inputEl = wrapper.querySelector("input");
+    const cb = createCheckbox(tag, tag);
+    const inputEl = cb.querySelector("input");
     if (oldChecked.includes(tag)) {
       inputEl.checked = true;
     }
-    tagSection.appendChild(wrapper);
+    tagSection.appendChild(cb);
   });
 }
 
 function getSelectedTags() {
-  const tagSection = document.getElementById("tagSection");
-  const checks = tagSection.querySelectorAll("input[type=checkbox]:checked");
+  const checks = document
+    .getElementById("tagSection")
+    .querySelectorAll("input[type=checkbox]:checked");
   const vals = [];
-  checks.forEach(chk => vals.push(chk.value.toLowerCase()));
+  checks.forEach(chk => vals.push(chk.value));
   return vals;
 }
 
@@ -348,8 +310,8 @@ function filterData() {
     .map(t => t.trim().toLowerCase())
     .filter(t => t);
 
-  const filtered = allBooks.filter(book => {
-    // A) Tag Filter
+  return allBooks.filter(book => {
+    // 1) Tag Filter
     if (selectedTags.length > 0) {
       const bookTagSet = new Set();
       if (Array.isArray(book.orientation_tags)) {
@@ -361,35 +323,30 @@ function filterData() {
       if (Array.isArray(book.other_tags)) {
         book.other_tags.forEach(t => bookTagSet.add(t.toLowerCase()));
       }
-
-      // Must have all selected tags
+      // must have all selected
       const hasAll = selectedTags.every(tag => bookTagSet.has(tag));
       if (!hasAll) return false;
     }
 
-    // B) Price Filter
+    // 2) Price Filter
     if (priceFilter !== "all") {
       const cat = getPriceCategory(book.price);
       if (cat !== priceFilter) return false;
     }
 
-    // C) Exclude triggers
+    // 3) Exclude triggers
     if (excludedTriggers.length > 0 && Array.isArray(book.triggers)) {
       const trigStr = book.triggers.join(" ").toLowerCase();
       const hasExcluded = excludedTriggers.some(ex => trigStr.includes(ex));
       if (hasExcluded) return false;
     }
-
     return true;
   });
-
-  return filtered;
 }
 
-/** Render exactly one item in #results. */
 function renderOneBook(book) {
   const resultsDiv = document.getElementById("results");
-  resultsDiv.innerHTML = ""; // clear
+  resultsDiv.innerHTML = "";
 
   if (!book) {
     resultsDiv.innerHTML = "<p>No book to display.</p>";
@@ -407,7 +364,6 @@ function renderOneBook(book) {
   const price = book.price || "";
   const triggers = (book.triggers || []).join("; ");
 
-  // If you want to show orientation_tags, genre_tags, etc. separately:
   const orientationTags = (book.orientation_tags || []).join(", ");
   const genreTags = (book.genre_tags || []).join(", ");
   const otherTags = (book.other_tags || []).join(", ");
@@ -416,14 +372,17 @@ function renderOneBook(book) {
     ${coverHtml}
     <div class="card-content">
       <h3>${title}</h3>
+      <!-- Genre right under the title in smaller font -->
+      <div class="genre-info">
+        ${genreTags ? `<strong>Genre:</strong> ${genreTags}` : ""}
+      </div>
       <div class="author">${author}</div>
       <div class="price">${price}</div>
       <p>${book.description || ""}</p>
 
       <div class="triggers"><strong>Triggers:</strong> ${triggers}</div>
       <div style="font-size:0.9rem; color:#666;">
-        <p><strong>Genre:</strong> ${genreTags}</p>
-        <p><strong>Other Tags:</strong> ${otherTags}</p>
+        <p><strong> Tags:</strong> ${otherTags}</p>
       </div>
 
       <p><a href="${book.final_url}" target="_blank">View on itch.io</a></p>
@@ -433,13 +392,11 @@ function renderOneBook(book) {
   resultsDiv.appendChild(card);
 }
 
-/** Animated random selection from the filtered array. */
 function animateSelection(arr) {
   const overlay = document.getElementById("animationOverlay");
   overlay.style.display = "flex";
 
   const animTitle = document.getElementById("animationTitle");
-
   let count = 0;
   const totalCycles = 20;
   const interval = setInterval(() => {
@@ -457,7 +414,6 @@ function animateSelection(arr) {
   }, 100);
 }
 
-/** On button: pickBook */
 function pickBook() {
   const filtered = filterData();
   if (filtered.length === 0) {
@@ -468,24 +424,19 @@ function pickBook() {
   animateSelection(filtered);
 }
 
-/** Clear filters */
 function clearFilters() {
-  // uncheck all tags
   const tagSection = document.getElementById("tagSection");
   const checks = tagSection.querySelectorAll("input[type=checkbox]");
   checks.forEach(chk => { chk.checked = false; });
 
-  // reset price & triggers
   document.getElementById("priceFilter").value = "all";
   document.getElementById("excludeTriggers").value = "";
   document.getElementById("results").innerHTML = "";
 
-  // also clear the tagSearch
   document.getElementById("tagSearch").value = "";
   showTagCheckboxes("");
 }
 
-/** Toggle hide/show the tagSection */
 function toggleTags() {
   const tagSection = document.getElementById("tagSection");
   if (tagSection.classList.contains("hide")) {
@@ -495,7 +446,7 @@ function toggleTags() {
   }
 }
 
-/** MAIN */
+// MAIN
 fetch("parsed_data.json")
   .then(response => response.json())
   .then(data => {
@@ -511,8 +462,6 @@ fetch("parsed_data.json")
 document.getElementById("pickBookBtn").addEventListener("click", pickBook);
 document.getElementById("clearFiltersBtn").addEventListener("click", clearFilters);
 document.getElementById("toggleTagsBtn").addEventListener("click", toggleTags);
-
-// Listen for input on #tagSearch to dynamically filter tags
 document.getElementById("tagSearch").addEventListener("input", e => {
   showTagCheckboxes(e.target.value.toLowerCase());
 });
