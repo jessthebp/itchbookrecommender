@@ -469,9 +469,6 @@ function renderOneBook(book) {
 }
 
 function clearFilters() {
-  // uncheck orientation
-  document.querySelectorAll("#orientationSection input[type=checkbox]")
-    .forEach(ch => ch.checked = false);
   // uncheck genre
   document.querySelectorAll("#genreSection input[type=checkbox]")
     .forEach(ch => ch.checked = false);
@@ -489,10 +486,8 @@ function clearFilters() {
 }
 
 function toggleTags() {
-  const orientationSec = document.getElementById("orientationSection");
   const genreSec = document.getElementById("genreSection");
   const otherSec = document.getElementById("otherSection");
-  orientationSec.classList.toggle("hide");
   genreSec.classList.toggle("hide");
   otherSec.classList.toggle("hide");
 }
